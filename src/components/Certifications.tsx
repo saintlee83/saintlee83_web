@@ -40,6 +40,8 @@ function CertificationModal({
   cert: Certification;
   onClose: () => void;
 }) {
+  const hasImage = !!cert.image;
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -53,161 +55,172 @@ function CertificationModal({
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.95, y: 20 }}
         transition={{ duration: 0.2 }}
-        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto rounded-2xl bg-[var(--background-secondary)] border border-[var(--glass-border)]"
+        className={`relative w-full max-h-[85vh] overflow-hidden rounded-2xl bg-[var(--background-secondary)] border border-[var(--glass-border)] flex ${
+          hasImage ? "max-w-4xl" : "max-w-lg"
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Image Header - 이미지가 있을 때만 표시 */}
-        {cert.image && (
-          <div className="relative w-full h-32 bg-[var(--background)] flex items-center justify-center">
-            <div className="relative w-24 h-24">
+        {/* Left: Content */}
+        <div
+          className={`flex flex-col overflow-y-auto ${
+            hasImage ? "w-1/2" : "w-full"
+          }`}
+        >
+          {/* Header */}
+          <div className="sticky top-0 z-10 flex items-center justify-between p-5 border-b border-[var(--glass-border)] bg-[var(--background-secondary)]">
+            <div className="flex items-center gap-3">
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center"
+                style={{ backgroundColor: `${cert.color}20` }}
+              >
+                <Award className="w-6 h-6" style={{ color: cert.color }} />
+              </div>
+              <div>
+                <h3
+                  className="text-lg font-bold"
+                  style={{
+                    fontFamily: "var(--font-playfair)",
+                    color: cert.color,
+                  }}
+                >
+                  {cert.name}
+                </h3>
+                <p className="text-sm text-[var(--text-muted)]">
+                  {cert.issuer}
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={onClose}
+              className="p-2 rounded-lg hover:bg-[var(--glass-bg)] transition-colors"
+            >
+              <X className="w-5 h-5 text-[var(--text-muted)]" />
+            </button>
+          </div>
+
+          {/* Content */}
+          <div className="p-5 space-y-5 flex-1">
+            {/* Status Badge */}
+            <div className="flex items-center gap-2">
+              {cert.expiry ? (
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[var(--accent-primary)]/10 text-[var(--accent-primary)]">
+                  <CheckCircle className="w-3.5 h-3.5" />
+                  유효 (~ {cert.expiry})
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[var(--accent-primary)]/10 text-[var(--accent-primary)]">
+                  <CheckCircle className="w-3.5 h-3.5" />
+                  영구 자격
+                </span>
+              )}
+            </div>
+
+            {/* Info Grid */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="p-3 rounded-lg bg-[var(--background)]">
+                <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
+                  <Calendar className="w-3.5 h-3.5" />
+                  취득일
+                </div>
+                <p className="text-sm font-medium">{cert.date}</p>
+              </div>
+              <div className="p-3 rounded-lg bg-[var(--background)]">
+                <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
+                  <Building2 className="w-3.5 h-3.5" />
+                  발급기관
+                </div>
+                <p className="text-sm font-medium truncate">{cert.issuer}</p>
+              </div>
+              {cert.credentialId && (
+                <div className="p-3 rounded-lg bg-[var(--background)]">
+                  <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
+                    <Hash className="w-3.5 h-3.5" />
+                    자격번호
+                  </div>
+                  <p className="text-sm font-medium font-mono">
+                    {cert.credentialId}
+                  </p>
+                </div>
+              )}
+              {cert.examInfo && (
+                <div className="p-3 rounded-lg bg-[var(--background)]">
+                  <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
+                    <BookOpen className="w-3.5 h-3.5" />
+                    시험 정보
+                  </div>
+                  <p className="text-sm font-medium">{cert.examInfo}</p>
+                </div>
+              )}
+            </div>
+
+            {/* Description */}
+            <div>
+              <h4 className="text-sm font-semibold mb-2 text-[var(--foreground)]">
+                자격증 소개
+              </h4>
+              <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                {cert.description}
+              </p>
+            </div>
+
+            {/* Skills */}
+            <div>
+              <h4 className="text-sm font-semibold mb-3 text-[var(--foreground)]">
+                관련 기술
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {cert.skills.map((skill, index) => (
+                  <motion.span
+                    key={skill}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: index * 0.05 }}
+                    className="px-3 py-1.5 rounded-lg text-xs font-medium"
+                    style={{
+                      backgroundColor: `${cert.color}15`,
+                      color: cert.color,
+                    }}
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Footer */}
+          {cert.link && (
+            <div className="sticky bottom-0 p-5 border-t border-[var(--glass-border)] bg-[var(--background-secondary)]">
+              <motion.a
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-lg text-sm font-medium text-[var(--background)] transition-colors"
+                style={{ backgroundColor: cert.color }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <ExternalLink className="w-4 h-4" />
+                인증 페이지 방문
+              </motion.a>
+            </div>
+          )}
+        </div>
+
+        {/* Right: Image */}
+        {hasImage && (
+          <div className="hidden md:flex w-1/2 bg-[var(--background)] items-center justify-center p-4 border-l border-[var(--glass-border)]">
+            <div className="relative w-full h-full min-h-[300px]">
               <Image
-                src={cert.image}
+                src={cert.image!}
                 alt={cert.name}
                 fill
-                className="object-contain"
+                className="object-contain rounded-lg"
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
                 }}
               />
             </div>
-          </div>
-        )}
-
-        {/* Header */}
-        <div className="sticky top-0 z-10 flex items-center justify-between p-5 border-b border-[var(--glass-border)] bg-[var(--background-secondary)]">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-12 h-12 rounded-xl flex items-center justify-center"
-              style={{ backgroundColor: `${cert.color}20` }}
-            >
-              <Award className="w-6 h-6" style={{ color: cert.color }} />
-            </div>
-            <div>
-              <h3
-                className="text-lg font-bold"
-                style={{
-                  fontFamily: "var(--font-playfair)",
-                  color: cert.color,
-                }}
-              >
-                {cert.name}
-              </h3>
-              <p className="text-sm text-[var(--text-muted)]">{cert.issuer}</p>
-            </div>
-          </div>
-          <button
-            onClick={onClose}
-            className="p-2 rounded-lg hover:bg-[var(--glass-bg)] transition-colors"
-          >
-            <X className="w-5 h-5 text-[var(--text-muted)]" />
-          </button>
-        </div>
-
-        {/* Content */}
-        <div className="p-5 space-y-5">
-          {/* Status Badge */}
-          <div className="flex items-center gap-2">
-            {cert.expiry ? (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[var(--accent-primary)]/10 text-[var(--accent-primary)]">
-                <CheckCircle className="w-3.5 h-3.5" />
-                유효 (~ {cert.expiry})
-              </span>
-            ) : (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[var(--accent-primary)]/10 text-[var(--accent-primary)]">
-                <CheckCircle className="w-3.5 h-3.5" />
-                영구 자격
-              </span>
-            )}
-          </div>
-
-          {/* Info Grid */}
-          <div className="grid grid-cols-2 gap-3">
-            <div className="p-3 rounded-lg bg-[var(--background)]">
-              <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
-                <Calendar className="w-3.5 h-3.5" />
-                취득일
-              </div>
-              <p className="text-sm font-medium">{cert.date}</p>
-            </div>
-            <div className="p-3 rounded-lg bg-[var(--background)]">
-              <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
-                <Building2 className="w-3.5 h-3.5" />
-                발급기관
-              </div>
-              <p className="text-sm font-medium truncate">{cert.issuer}</p>
-            </div>
-            {cert.credentialId && (
-              <div className="p-3 rounded-lg bg-[var(--background)]">
-                <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
-                  <Hash className="w-3.5 h-3.5" />
-                  자격번호
-                </div>
-                <p className="text-sm font-medium font-mono">
-                  {cert.credentialId}
-                </p>
-              </div>
-            )}
-            {cert.examInfo && (
-              <div className="p-3 rounded-lg bg-[var(--background)]">
-                <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
-                  <BookOpen className="w-3.5 h-3.5" />
-                  시험 정보
-                </div>
-                <p className="text-sm font-medium">{cert.examInfo}</p>
-              </div>
-            )}
-          </div>
-
-          {/* Description */}
-          <div>
-            <h4 className="text-sm font-semibold mb-2 text-[var(--foreground)]">
-              자격증 소개
-            </h4>
-            <p className="text-sm text-[var(--text-muted)] leading-relaxed">
-              {cert.description}
-            </p>
-          </div>
-
-          {/* Skills */}
-          <div>
-            <h4 className="text-sm font-semibold mb-3 text-[var(--foreground)]">
-              관련 기술
-            </h4>
-            <div className="flex flex-wrap gap-2">
-              {cert.skills.map((skill, index) => (
-                <motion.span
-                  key={skill}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.05 }}
-                  className="px-3 py-1.5 rounded-lg text-xs font-medium"
-                  style={{
-                    backgroundColor: `${cert.color}15`,
-                    color: cert.color,
-                  }}
-                >
-                  {skill}
-                </motion.span>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Footer */}
-        {cert.link && (
-          <div className="sticky bottom-0 p-5 border-t border-[var(--glass-border)] bg-[var(--background-secondary)]">
-            <motion.a
-              href={cert.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-lg text-sm font-medium text-[var(--background)] transition-colors"
-              style={{ backgroundColor: cert.color }}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <ExternalLink className="w-4 h-4" />
-              인증 페이지 방문
-            </motion.a>
           </div>
         )}
       </motion.div>
