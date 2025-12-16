@@ -553,6 +553,25 @@
         "취업 정보 획득"
       ],
       "image": "/images/activities/biohealth-jobfair.jpg"
+    },
+    {
+      "id": "31",
+      "title": "2025년 산업기술 R&D교육 기본과정",
+      "organization": "한국산업기술기획평가원",
+      "type": "education",
+      "year": 2025,
+      "featured": false,
+      "date": "2025.08.26",
+      "location": "온라인",
+      "description": "산업기술 R&D 기획 및 평가 기초 역량 교육",
+      "longDescription": "한국산업기술기획평가원(KEIT)에서 주관하는 산업기술 R&D교육 기본과정을 온라인으로 수강하여 국가 R&D 사업의 기획, 평가, 관리에 대한 기초 역량을 함양했습니다.",
+      "highlights": [
+        "국가 R&D 정책 이해",
+        "R&D 사업 기획 방법론",
+        "기술평가 기초",
+        "산업기술 동향 분석"
+      ],
+      "image": "/images/activities/keit-rd-education.png"
     }
   ],
   "tabs": [
