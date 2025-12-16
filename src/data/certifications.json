@@ -1,0 +1,87 @@
+{
+  "certifications": [
+    {
+      "id": "1",
+      "name": "정보처리산업기사",
+      "issuer": "한국산업인력공단",
+      "date": "2024",
+      "credentialId": "",
+      "color": "#10b981",
+      "skills": [
+        "소프트웨어 개발",
+        "데이터베이스",
+        "네트워크",
+        "시스템 분석",
+        "프로그래밍"
+      ],
+      "description": "정보시스템의 분석, 설계, 구현, 시험, 운영, 유지보수 등의 업무를 수행하는 산업기사급 국가기술자격입니다. 정보처리 분야의 실무 능력을 인증합니다.",
+      "examInfo": "필기 + 실기",
+      "image": "/images/certifications/industrial-engineer.png"
+    },
+    {
+      "id": "2",
+      "name": "정보처리기능사",
+      "issuer": "한국산업인력공단",
+      "date": "2022",
+      "credentialId": "",
+      "color": "#06b6d4",
+      "skills": ["프로그래밍", "데이터베이스", "운영체제", "정보시스템"],
+      "description": "정보처리 분야의 기초적인 업무를 수행할 수 있는 능력을 검증하는 국가기술자격입니다. 프로그래밍 및 데이터베이스 기초 지식을 인증합니다.",
+      "examInfo": "필기 + 실기",
+      "image": "/images/certifications/craftsman.png"
+    },
+    {
+      "id": "3",
+      "name": "웹디자인기능사",
+      "issuer": "한국산업인력공단",
+      "date": "2024",
+      "credentialId": "",
+      "color": "#8b5cf6",
+      "skills": ["HTML/CSS", "JavaScript", "웹 표준", "UI/UX", "반응형 웹"],
+      "description": "웹 페이지 제작에 필요한 디자인 및 코딩 능력을 검증하는 국가기술자격입니다. HTML, CSS, JavaScript를 활용한 웹사이트 구현 능력을 인증합니다.",
+      "examInfo": "필기 + 실기 (4시간)",
+      "image": "/images/certifications/web-design.png"
+    },
+    {
+      "id": "4",
+      "name": "SQLD (SQL 개발자)",
+      "issuer": "한국데이터산업진흥원",
+      "date": "2024",
+      "credentialId": "",
+      "color": "#f59e0b",
+      "skills": ["SQL", "데이터 모델링", "성능 최적화", "데이터베이스 설계"],
+      "description": "데이터베이스와 데이터 모델링에 대한 지식을 바탕으로 SQL을 활용하여 데이터를 조작하고 추출하는 능력을 검증하는 자격증입니다.",
+      "examInfo": "90분 / 50문항",
+      "image": "/images/certifications/sqld.png"
+    },
+    {
+      "id": "5",
+      "name": "ITQ 3종 A급",
+      "issuer": "한국생산성본부",
+      "date": "2022",
+      "credentialId": "",
+      "color": "#3b82f6",
+      "skills": ["한글", "파워포인트", "엑셀", "문서 작성", "데이터 분석"],
+      "description": "한글, 파워포인트, 엑셀 3종목 모두 A등급을 취득한 정보기술자격입니다. 실무에서 필수적인 OA 활용 능력을 인증합니다.",
+      "examInfo": "각 과목 60분",
+      "image": "/images/certifications/itq.png"
+    },
+    {
+      "id": "6",
+      "name": "GTQ 일러스트 2급",
+      "issuer": "한국생산성본부",
+      "date": "2024",
+      "credentialId": "",
+      "color": "#ec4899",
+      "skills": [
+        "Adobe Illustrator",
+        "벡터 그래픽",
+        "로고 디자인",
+        "일러스트레이션"
+      ],
+      "description": "Adobe Illustrator를 활용한 그래픽 디자인 능력을 검증하는 자격증입니다. 벡터 기반 디자인 및 일러스트레이션 제작 능력을 인증합니다.",
+      "examInfo": "90분 / 실기",
+      "image": "/images/certifications/gtq-illustrator.png"
+    }
+  ]
+}

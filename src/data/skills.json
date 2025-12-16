@@ -1,0 +1,113 @@
+{
+  "skillCategories": [
+    {
+      "title": "Frontend",
+      "color": "#10b981",
+      "skills": [
+        { "name": "React / Next.js", "level": 95 },
+        { "name": "TypeScript", "level": 90 },
+        { "name": "Tailwind CSS", "level": 92 },
+        { "name": "Vue.js", "level": 80 }
+      ]
+    },
+    {
+      "title": "Backend",
+      "color": "#06b6d4",
+      "skills": [
+        { "name": "Node.js", "level": 90 },
+        { "name": "Python", "level": 85 },
+        { "name": "Java / Spring", "level": 78 },
+        { "name": "GraphQL", "level": 78 }
+      ]
+    },
+    {
+      "title": "AI / ML",
+      "color": "#ec4899",
+      "skills": [
+        { "name": "OpenAI API", "level": 88 },
+        { "name": "LangChain", "level": 82 },
+        { "name": "PyTorch", "level": 75 },
+        { "name": "Hugging Face", "level": 78 }
+      ]
+    },
+    {
+      "title": "Native Development",
+      "color": "#f59e0b",
+      "skills": [
+        { "name": "C# / .NET", "level": 85 },
+        { "name": "Swift / iOS", "level": 75 },
+        { "name": "Kotlin / Android", "level": 70 },
+        { "name": "React Native", "level": 82 }
+      ]
+    },
+    {
+      "title": "Database",
+      "color": "#14b8a6",
+      "skills": [
+        { "name": "PostgreSQL", "level": 88 },
+        { "name": "MongoDB", "level": 85 },
+        { "name": "Redis", "level": 82 },
+        { "name": "MySQL", "level": 80 }
+      ]
+    },
+    {
+      "title": "DevOps / Cloud",
+      "color": "#8b5cf6",
+      "skills": [
+        { "name": "Docker / K8s", "level": 85 },
+        { "name": "AWS", "level": 80 },
+        { "name": "GCP", "level": 75 },
+        { "name": "CI/CD", "level": 82 }
+      ]
+    },
+    {
+      "title": "Collaboration",
+      "color": "#3b82f6",
+      "skills": [
+        { "name": "Jira / Confluence", "level": 90 },
+        { "name": "Slack", "level": 95 },
+        { "name": "Notion", "level": 92 },
+        { "name": "Figma", "level": 85 }
+      ]
+    },
+    {
+      "title": "Dev Tools",
+      "color": "#ef4444",
+      "skills": [
+        { "name": "VS Code / Cursor", "level": 95 },
+        { "name": "Git / GitHub", "level": 95 },
+        { "name": "Postman", "level": 88 },
+        { "name": "IntelliJ / Rider", "level": 82 }
+      ]
+    }
+  ],
+  "techStack": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Python",
+    "Java",
+    "Spring",
+    "OpenAI",
+    "LangChain",
+    "PyTorch",
+    "C#",
+    ".NET",
+    "Swift",
+    "Kotlin",
+    "React Native",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "MySQL",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "GCP",
+    "Jira",
+    "Notion",
+    "Figma",
+    "Git"
+  ]
+}

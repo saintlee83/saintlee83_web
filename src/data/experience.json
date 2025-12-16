@@ -1,0 +1,67 @@
+{
+  "experiences": [
+    {
+      "id": "1",
+      "title": "바이오의료기기과",
+      "company": "가천대학교",
+      "location": "경기 성남",
+      "period": "2025 - 현재 (재학중)",
+      "description": [
+        "조기취업형 계약학과로 산업체 연계 실무 중심 교육 이수",
+        "의료기기 및 바이오 분야 전문 지식 학습",
+        "헬스케어 데이터 분석 및 AI 활용 프로젝트 수행"
+      ],
+      "technologies": [
+        "Python",
+        "Data Analysis",
+        "Healthcare AI",
+        "Medical Device"
+      ],
+      "color": "#10b981"
+    },
+    {
+      "id": "2",
+      "title": "Digital Alchemist Labs",
+      "company": "D-ALabs",
+      "location": "온라인",
+      "period": "2024 - 현재",
+      "description": [
+        "다양한 경진대회 및 컨퍼런스 참여를 위한 팀 활동",
+        "AI Youth Challenge 대상(교육부 장관상) 수상 - SignGPT 프로젝트",
+        "디지털새싹 메이커톤 최우수상 수상",
+        "팀 협업을 통한 프로젝트 기획 및 개발"
+      ],
+      "technologies": ["Python", "AI/ML", "LangChain", "OpenVINO"],
+      "color": "#06b6d4"
+    },
+    {
+      "id": "3",
+      "title": "소프트웨어 개발과",
+      "company": "성일정보고등학교",
+      "location": "경기 성남",
+      "period": "2022 - 2024",
+      "description": [
+        "소프트웨어 개발 전공으로 프로그래밍 기초부터 심화까지 학습",
+        "웹 개발, 데이터베이스, 알고리즘 등 IT 전반 교육 이수",
+        "다수의 국가기술자격증 취득 (정보처리산업기사 외)"
+      ],
+      "technologies": ["Python", "JavaScript", "Java", "SQL", "HTML/CSS"],
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "4",
+      "title": "Sung-il Software Study",
+      "company": "성일정보고등학교",
+      "location": "경기 성남",
+      "period": "2022 - 현재",
+      "description": [
+        "교내 최대 규모 자율동아리, 2021년 소규모로 시작하여 2024년 단장 취임",
+        "약 80명의 부원을 이끌며 다양한 스터디 트랙 운영",
+        "학기별 컨퍼런스 2회 주최 및 발표 진행",
+        "Python, Next.js, RAG 등 다양한 스터디 커리큘럼 기획 및 운영"
+      ],
+      "technologies": ["Python", "Next.js", "React", "LangChain", "Flutter"],
+      "color": "#ef4444"
+    }
+  ]
+}
