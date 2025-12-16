@@ -2,6 +2,7 @@
 
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
+import Image from "next/image";
 import {
   Calendar,
   MapPin,
@@ -73,6 +74,7 @@ function ActivityModal({
   onClose: () => void;
 }) {
   const color = colors[activity.type] || "#6366f1";
+  const hasImage = !!activity.image;
 
   return (
     <motion.div
@@ -87,119 +89,145 @@ function ActivityModal({
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.95, y: 20 }}
         transition={{ duration: 0.2 }}
-        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto rounded-2xl bg-[var(--background-secondary)] border border-[var(--glass-border)]"
+        className={`relative w-full max-h-[85vh] overflow-hidden rounded-2xl bg-[var(--background-secondary)] border border-[var(--glass-border)] flex ${
+          hasImage ? "max-w-4xl" : "max-w-lg"
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
-        <div className="sticky top-0 z-10 flex items-center justify-between p-5 border-b border-[var(--glass-border)] bg-[var(--background-secondary)]">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-12 h-12 rounded-xl flex items-center justify-center"
-              style={{ backgroundColor: `${color}20` }}
-            >
-              <span style={{ color }}>{getTypeIcon(activity.type)}</span>
-            </div>
-            <div>
-              <h3
-                className="text-lg font-bold"
-                style={{
-                  fontFamily: "var(--font-playfair)",
-                  color,
-                }}
+        {/* Left: Content */}
+        <div
+          className={`flex flex-col overflow-y-auto ${
+            hasImage ? "w-1/2" : "w-full"
+          }`}
+        >
+          {/* Header */}
+          <div className="sticky top-0 z-10 flex items-center justify-between p-5 border-b border-[var(--glass-border)] bg-[var(--background-secondary)]">
+            <div className="flex items-center gap-3">
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center"
+                style={{ backgroundColor: `${color}20` }}
               >
-                {activity.title}
-              </h3>
-              <p className="text-sm text-[var(--text-muted)]">
-                {activity.organization}
+                <span style={{ color }}>{getTypeIcon(activity.type)}</span>
+              </div>
+              <div>
+                <h3
+                  className="text-lg font-bold"
+                  style={{
+                    fontFamily: "var(--font-playfair)",
+                    color,
+                  }}
+                >
+                  {activity.title}
+                </h3>
+                <p className="text-sm text-[var(--text-muted)]">
+                  {activity.organization}
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={onClose}
+              className="p-2 rounded-lg hover:bg-[var(--glass-bg)] transition-colors"
+            >
+              <X className="w-5 h-5 text-[var(--text-muted)]" />
+            </button>
+          </div>
+
+          {/* Content */}
+          <div className="p-5 space-y-5 flex-1">
+            {/* Type Badge */}
+            <div className="flex items-center gap-2">
+              <span
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
+                style={{ backgroundColor: `${color}15`, color }}
+              >
+                {getTypeIcon(activity.type)}
+                {labels[activity.type] || activity.type}
+              </span>
+            </div>
+
+            {/* Info Grid */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="p-3 rounded-lg bg-[var(--background)]">
+                <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
+                  <Calendar className="w-3.5 h-3.5" />
+                  기간
+                </div>
+                <p className="text-sm font-medium">{activity.date}</p>
+              </div>
+              <div className="p-3 rounded-lg bg-[var(--background)]">
+                <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
+                  <MapPin className="w-3.5 h-3.5" />
+                  장소
+                </div>
+                <p className="text-sm font-medium">{activity.location}</p>
+              </div>
+            </div>
+
+            {/* Long Description */}
+            <div>
+              <h4 className="text-sm font-semibold mb-2 text-[var(--foreground)]">
+                상세 설명
+              </h4>
+              <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                {activity.longDescription}
               </p>
             </div>
-          </div>
-          <button
-            onClick={onClose}
-            className="p-2 rounded-lg hover:bg-[var(--glass-bg)] transition-colors"
-          >
-            <X className="w-5 h-5 text-[var(--text-muted)]" />
-          </button>
-        </div>
 
-        {/* Content */}
-        <div className="p-5 space-y-5">
-          {/* Type Badge */}
-          <div className="flex items-center gap-2">
-            <span
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
-              style={{ backgroundColor: `${color}15`, color }}
-            >
-              {getTypeIcon(activity.type)}
-              {labels[activity.type] || activity.type}
-            </span>
-          </div>
-
-          {/* Info Grid */}
-          <div className="grid grid-cols-2 gap-3">
-            <div className="p-3 rounded-lg bg-[var(--background)]">
-              <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
-                <Calendar className="w-3.5 h-3.5" />
-                기간
-              </div>
-              <p className="text-sm font-medium">{activity.date}</p>
-            </div>
-            <div className="p-3 rounded-lg bg-[var(--background)]">
-              <div className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-1">
-                <MapPin className="w-3.5 h-3.5" />
-                장소
-              </div>
-              <p className="text-sm font-medium">{activity.location}</p>
+            {/* Highlights */}
+            <div>
+              <h4 className="text-sm font-semibold mb-3 text-[var(--foreground)]">
+                주요 내용
+              </h4>
+              <ul className="space-y-2">
+                {activity.highlights.map((highlight, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.05 }}
+                    className="flex items-start gap-2 text-sm text-[var(--text-muted)]"
+                  >
+                    <span style={{ color }}>•</span>
+                    {highlight}
+                  </motion.li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          {/* Long Description */}
-          <div>
-            <h4 className="text-sm font-semibold mb-2 text-[var(--foreground)]">
-              상세 설명
-            </h4>
-            <p className="text-sm text-[var(--text-muted)] leading-relaxed">
-              {activity.longDescription}
-            </p>
-          </div>
-
-          {/* Highlights */}
-          <div>
-            <h4 className="text-sm font-semibold mb-3 text-[var(--foreground)]">
-              주요 내용
-            </h4>
-            <ul className="space-y-2">
-              {activity.highlights.map((highlight, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                  className="flex items-start gap-2 text-sm text-[var(--text-muted)]"
-                >
-                  <span style={{ color }}>•</span>
-                  {highlight}
-                </motion.li>
-              ))}
-            </ul>
-          </div>
+          {/* Footer */}
+          {activity.link && (
+            <div className="sticky bottom-0 p-5 border-t border-[var(--glass-border)] bg-[var(--background-secondary)]">
+              <motion.a
+                href={activity.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-lg text-sm font-medium text-[var(--background)] transition-colors"
+                style={{ backgroundColor: color }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <ExternalLink className="w-4 h-4" />
+                자세히 보기
+              </motion.a>
+            </div>
+          )}
         </div>
 
-        {/* Footer */}
-        {activity.link && (
-          <div className="sticky bottom-0 p-5 border-t border-[var(--glass-border)] bg-[var(--background-secondary)]">
-            <motion.a
-              href={activity.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-lg text-sm font-medium text-[var(--background)] transition-colors"
-              style={{ backgroundColor: color }}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <ExternalLink className="w-4 h-4" />
-              자세히 보기
-            </motion.a>
+        {/* Right: Image */}
+        {hasImage && (
+          <div className="hidden md:flex w-1/2 bg-[var(--background)] items-center justify-center p-4 border-l border-[var(--glass-border)]">
+            <div className="relative w-full h-full min-h-[300px]">
+              <Image
+                src={activity.image!}
+                alt={activity.title}
+                fill
+                className="object-contain rounded-lg"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+              />
+            </div>
           </div>
         )}
       </motion.div>

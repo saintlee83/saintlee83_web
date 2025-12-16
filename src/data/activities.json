@@ -2,25 +2,6 @@
   "activities": [
     {
       "id": "1",
-      "title": "2022 영재학회 R&E 참가",
-      "organization": "사단법인 영재학회",
-      "type": "competition",
-      "year": 2022,
-      "featured": true,
-      "date": "2022.08 - 2022.11",
-      "location": "온라인",
-      "description": "세월호 참사 당시 위치별 사망 상관관계 분석",
-      "longDescription": "2022년 영재학회 R&E 프로그램에 참가하여 세월호 참사 당시 승객들의 위치별 사망 상관관계를 데이터 분석을 통해 연구했습니다. 통계적 분석 방법론을 활용하여 의미 있는 인사이트를 도출했습니다.",
-      "highlights": [
-        "세월호 참사 데이터 수집 및 전처리",
-        "위치별 생존율 통계 분석",
-        "상관관계 분석 및 시각화",
-        "연구 결과 발표"
-      ],
-      "image": "/images/activities/rne-2022.jpg"
-    },
-    {
-      "id": "2",
       "title": "AI for Youth",
       "organization": "Brain AI",
       "type": "academy",
@@ -36,7 +17,26 @@
         "환경 영향 요인 분석",
         "AI 모델 개발 및 적용"
       ],
-      "image": "/images/activities/ai-for-youth.jpg"
+      "image": "/images/activities/ai-for-youth.png"
+    },
+    {
+      "id": "2",
+      "title": "2022 영재학회 R&E 참가",
+      "organization": "사단법인 영재학회",
+      "type": "competition",
+      "year": 2022,
+      "featured": true,
+      "date": "2022.08 - 2022.11",
+      "location": "온라인",
+      "description": "세월호 참사 당시 위치별 사망 상관관계 분석",
+      "longDescription": "2022년 영재학회 R&E 프로그램에 참가하여 세월호 참사 당시 승객들의 위치별 사망 상관관계를 데이터 분석을 통해 연구했습니다. 통계적 분석 방법론을 활용하여 의미 있는 인사이트를 도출했습니다.",
+      "highlights": [
+        "세월호 참사 데이터 수집 및 전처리",
+        "위치별 생존율 통계 분석",
+        "상관관계 분석 및 시각화",
+        "연구 결과 발표"
+      ],
+      "image": "/images/activities/rne-2022.png"
     },
     {
       "id": "3",
@@ -55,7 +55,7 @@
         "데이터 전처리 및 정제 실습",
         "분석 프로젝트 수행"
       ],
-      "image": "/images/activities/samsung-sw.jpg"
+      "image": "/images/activities/samsung-sw.png"
     },
     {
       "id": "4",
@@ -97,25 +97,6 @@
     },
     {
       "id": "6",
-      "title": "Singapore ITE 해외 교류 프로그램",
-      "organization": "Institute of Technical Education, Singapore",
-      "type": "community",
-      "year": 2023,
-      "featured": true,
-      "date": "2023.09.19 - 2023.09.21",
-      "location": "싱가포르",
-      "description": "싱가포르 ITE 학생 교류 프로그램 참여",
-      "longDescription": "싱가포르 Institute of Technical Education에서 진행된 해외 학생 교류 프로그램에 참여했습니다. 글로벌 교육 환경을 경험하고 국제 학생들과 교류하는 소중한 기회였습니다.",
-      "highlights": [
-        "싱가포르 ITE 캠퍼스 방문",
-        "국제 학생 교류 활동",
-        "글로벌 교육 환경 체험",
-        "문화 교류 프로그램 참여"
-      ],
-      "image": "/images/activities/singapore-ite.jpg"
-    },
-    {
-      "id": "7",
       "title": "일본 오사카 SEIJO HIGH SCHOOL 연수",
       "organization": "중소벤처기업부",
       "type": "community",
@@ -134,65 +115,7 @@
       "image": "/images/activities/osaka-seijo.jpg"
     },
     {
-      "id": "8",
-      "title": "2023 대한민국 SW 인재 교육 페스티벌",
-      "organization": "대한민국 SW 인재 교육 페스티벌",
-      "type": "community",
-      "year": 2023,
-      "featured": true,
-      "date": "2023.11.03 - 2023.11.04",
-      "location": "서울",
-      "description": "자율주행 자동차 부스 운영",
-      "longDescription": "2023 대한민국 SW 인재 교육 페스티벌에서 자율주행 자동차 관련 부스를 운영했습니다. 방문객들에게 자율주행 기술을 소개하고 체험 기회를 제공했습니다.",
-      "highlights": [
-        "자율주행 자동차 시연",
-        "방문객 대상 기술 설명",
-        "체험 프로그램 운영",
-        "SW 교육 홍보 활동"
-      ],
-      "image": "/images/activities/sw-festival-2023.jpg"
-    },
-    {
-      "id": "9",
-      "title": "Google DevFest 2023",
-      "organization": "Google Developers",
-      "type": "conference",
-      "year": 2023,
-      "featured": false,
-      "date": "2023.12.10",
-      "location": "서울",
-      "description": "Google DevFest 컨퍼런스 참석",
-      "longDescription": "Google에서 주최하는 DevFest 2023 컨퍼런스에 참석하여 최신 기술 트렌드와 Google 플랫폼의 새로운 기능들에 대해 학습했습니다.",
-      "highlights": [
-        "최신 기술 트렌드 학습",
-        "Google 플랫폼 신기능 소개",
-        "개발자 네트워킹",
-        "기술 세션 참여"
-      ],
-      "link": "https://devfest.withgoogle.com",
-      "image": "/images/activities/devfest-2023.jpg"
-    },
-    {
-      "id": "10",
-      "title": "Sung-il Software Study 컨퍼런스",
-      "organization": "Sung-il Software Study",
-      "type": "conference",
-      "year": 2023,
-      "featured": false,
-      "date": "2023.08.18",
-      "location": "성일정보고등학교",
-      "description": "교내 소프트웨어 스터디 컨퍼런스 참여",
-      "longDescription": "Sung-il Software Study에서 주최한 교내 컨퍼런스에 참여하여 한 학기 동안의 스터디 성과를 발표하고 다른 스터디원들의 발표를 청취했습니다.",
-      "highlights": [
-        "스터디 성과 발표",
-        "기술 세션 참여",
-        "피드백 및 Q&A",
-        "스터디원 네트워킹"
-      ],
-      "image": "/images/activities/sss-conf-2023.jpg"
-    },
-    {
-      "id": "11",
+      "id": "7",
       "title": "게임 개발 기능경기 대회",
       "organization": "기능경기대회",
       "type": "competition",
@@ -211,7 +134,102 @@
       "image": "/images/activities/game-dev-competition.jpg"
     },
     {
+      "id": "8",
+      "title": "Sung-il Software Study 컨퍼런스",
+      "organization": "Sung-il Software Study",
+      "type": "conference",
+      "year": 2023,
+      "featured": false,
+      "date": "2023.08.18",
+      "location": "성일정보고등학교",
+      "description": "교내 소프트웨어 스터디 컨퍼런스 참여",
+      "longDescription": "Sung-il Software Study에서 주최한 교내 컨퍼런스에 참여하여 한 학기 동안의 스터디 성과를 발표하고 다른 스터디원들의 발표를 청취했습니다.",
+      "highlights": [
+        "스터디 성과 발표",
+        "기술 세션 참여",
+        "피드백 및 Q&A",
+        "스터디원 네트워킹"
+      ],
+      "image": "/images/activities/sss-conf-2023.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Singapore ITE 해외 교류 프로그램",
+      "organization": "Institute of Technical Education, Singapore",
+      "type": "community",
+      "year": 2023,
+      "featured": true,
+      "date": "2023.09.19 - 2023.09.21",
+      "location": "성일정보고등학교",
+      "description": "싱가포르 ITE 학생 교류 프로그램 참여",
+      "longDescription": "성일정보고등학교에서 진행된 해외 학생 교류 프로그램에 참여했습니다. 글로벌 교육 환경을 경험하고 국제 학생들과 교류하는 소중한 기회였습니다.",
+      "highlights": [
+        "국제 학생 교류 활동",
+        "글로벌 교육 환경 체험",
+        "문화 교류 프로그램 참여"
+      ],
+      "image": "/images/activities/singapore-ite.png"
+    },
+    {
+      "id": "10",
+      "title": "2023 교내 프로그래밍경진대회 우수상(2위)",
+      "organization": "성일정보고등학교",
+      "type": "award",
+      "year": 2023,
+      "featured": true,
+      "date": "2023.10.20",
+      "location": "성일정보고등학교",
+      "description": "교내 프로그래밍 경진대회 우수상(2위) 수상",
+      "longDescription": "성일정보고등학교에서 개최한 2023년 교내 프로그래밍 경진대회에 참가하여 우수상(2위)을 수상했습니다. 알고리즘 문제 해결 능력과 코딩 실력을 인정받았습니다.",
+      "highlights": [
+        "프로그래밍 경진대회 우수상(2위) 수상",
+        "알고리즘 문제 해결",
+        "제한 시간 내 코딩 테스트",
+        "논리적 사고력 및 코딩 능력 인정"
+      ],
+      "image": "/images/activities/programming-contest.png"
+    },
+    {
+      "id": "11",
+      "title": "2023 대한민국 SW 인재 교육 페스티벌",
+      "organization": "대한민국 SW 인재 교육 페스티벌",
+      "type": "community",
+      "year": 2023,
+      "featured": true,
+      "date": "2023.11.03 - 2023.11.04",
+      "location": "서울",
+      "description": "자율주행 자동차 부스 운영",
+      "longDescription": "2023 대한민국 SW 인재 교육 페스티벌에서 자율주행 자동차 관련 부스를 운영했습니다. 방문객들에게 자율주행 기술을 소개하고 체험 기회를 제공했습니다.",
+      "highlights": [
+        "자율주행 자동차 시연",
+        "방문객 대상 기술 설명",
+        "체험 프로그램 운영",
+        "SW 교육 홍보 활동"
+      ],
+      "image": "/images/activities/sw-festival-2023.jpeg"
+    },
+    {
       "id": "12",
+      "title": "Google DevFest 2023",
+      "organization": "Google Developers",
+      "type": "conference",
+      "year": 2023,
+      "featured": false,
+      "date": "2023.12.10",
+      "location": "서울",
+      "description": "Google DevFest 컨퍼런스 참석",
+      "longDescription": "Google에서 주최하는 DevFest 2023 컨퍼런스에 참석하여 최신 기술 트렌드와 Google 플랫폼의 새로운 기능들에 대해 학습했습니다.",
+      "highlights": [
+        "최신 기술 트렌드 학습",
+        "Google 플랫폼 신기능 소개",
+        "개발자 네트워킹",
+        "기술 세션 참여"
+      ],
+      "link": "https://devfest.withgoogle.com",
+      "image": "/images/activities/devfest-2023.jpeg"
+    },
+    {
+      "id": "13",
       "title": "랭체인소맨 스터디",
       "organization": "가짜연구소",
       "type": "community",
@@ -231,7 +249,7 @@
       "image": "/images/activities/langchain-study.jpg"
     },
     {
-      "id": "13",
+      "id": "14",
       "title": "Sung-il Software Study 단장",
       "organization": "Sung-il Software Study",
       "type": "community",
@@ -250,83 +268,7 @@
       "image": "/images/activities/sss-leader.jpg"
     },
     {
-      "id": "14",
-      "title": "Python 기초 스터디 운영",
-      "organization": "Sung-il Software Study",
-      "type": "workshop",
-      "year": 2024,
-      "featured": false,
-      "date": "2024.04 - 2024.06",
-      "location": "성일정보고등학교",
-      "description": "Python 기초 문법 및 프로그래밍 스터디 운영",
-      "longDescription": "프로그래밍 입문자를 위한 Python 기초 스터디를 기획하고 운영했습니다. 기초 문법부터 간단한 프로젝트까지 체계적인 커리큘럼을 구성했습니다.",
-      "highlights": [
-        "Python 기초 문법 교육",
-        "실습 중심 커리큘럼",
-        "프로그래밍 입문자 대상",
-        "프로젝트 기반 학습"
-      ],
-      "image": "/images/activities/python-basic.jpg"
-    },
-    {
       "id": "15",
-      "title": "Python?! 그거 어디에 쓰는데 스터디",
-      "organization": "Sung-il Software Study",
-      "type": "workshop",
-      "year": 2024,
-      "featured": false,
-      "date": "2024.04 - 2024.06",
-      "location": "성일정보고등학교",
-      "description": "Python 실무 활용 사례 스터디 운영",
-      "longDescription": "Python의 다양한 실무 활용 사례를 다루는 스터디를 운영했습니다. 데이터 분석, 자동화, 웹 개발 등 실제 활용 분야를 탐구했습니다.",
-      "highlights": [
-        "Python 활용 분야 탐구",
-        "데이터 분석 실습",
-        "자동화 스크립트 작성",
-        "실무 프로젝트 체험"
-      ],
-      "image": "/images/activities/python-usage.jpg"
-    },
-    {
-      "id": "16",
-      "title": "Next.js 반응형 웹 만들기 스터디",
-      "organization": "Sung-il Software Study",
-      "type": "workshop",
-      "year": 2024,
-      "featured": false,
-      "date": "2024.09 - 2024.11",
-      "location": "성일정보고등학교",
-      "description": "Next.js를 활용한 반응형 웹 개발 스터디 운영",
-      "longDescription": "Next.js 프레임워크를 활용한 반응형 웹 개발 스터디를 운영했습니다. React 기초부터 Next.js 심화까지 웹 개발 전반을 다루었습니다.",
-      "highlights": [
-        "React/Next.js 기초 교육",
-        "반응형 웹 디자인 실습",
-        "실제 웹사이트 개발",
-        "배포 및 운영 학습"
-      ],
-      "image": "/images/activities/nextjs-study.jpg"
-    },
-    {
-      "id": "17",
-      "title": "내 삶의 LEG가 되어줄 RAG 구축하기",
-      "organization": "Sung-il Software Study",
-      "type": "workshop",
-      "year": 2024,
-      "featured": true,
-      "date": "2024.09 - 2024.11",
-      "location": "성일정보고등학교",
-      "description": "RAG 시스템 구축 실습 스터디 운영",
-      "longDescription": "LLM과 RAG(Retrieval-Augmented Generation) 기술을 활용한 개인화된 AI 시스템 구축 스터디를 운영했습니다. 실제 서비스 수준의 RAG 파이프라인 구축을 목표로 했습니다.",
-      "highlights": [
-        "RAG 아키텍처 이해",
-        "벡터 DB 활용",
-        "LangChain 실습",
-        "개인화 AI 시스템 구축"
-      ],
-      "image": "/images/activities/rag-study.jpg"
-    },
-    {
-      "id": "18",
       "title": "Sung-il Software Study 컨퍼런스 발표",
       "organization": "Sung-il Software Study",
       "type": "conference",
@@ -345,84 +287,45 @@
       "image": "/images/activities/sss-conf-2024.jpg"
     },
     {
-      "id": "19",
-      "title": "AI Youth Challenge 교육부 장관상(대상)",
-      "organization": "AI Youth Challenge",
-      "type": "award",
-      "year": 2024,
-      "featured": true,
-      "date": "2024.08.27",
-      "location": "서울",
-      "description": "SignGPT 프로젝트로 교육부 장관상 대상 수상",
-      "longDescription": "AI Youth Challenge에서 SignGPT 프로젝트로 교육부 장관상(대상)을 수상했습니다. 수어 인식 AI를 활용한 소통 도구를 개발하여 사회적 가치를 인정받았습니다.",
-      "highlights": [
-        "교육부 장관상 대상 수상",
-        "SignGPT 프로젝트 개발",
-        "수어 인식 AI 구현",
-        "사회적 가치 창출"
-      ],
-      "image": "/images/activities/ai-youth-challenge.jpg"
-    },
-    {
-      "id": "20",
-      "title": "DevFest 송도 2024",
-      "organization": "Google Developers",
-      "type": "conference",
+      "id": "16",
+      "title": "Python 기초 스터디 운영",
+      "organization": "Sung-il Software Study",
+      "type": "community",
       "year": 2024,
       "featured": false,
-      "date": "2024.12",
-      "location": "인천 송도",
-      "description": "Google DevFest 송도 컨퍼런스 참여",
-      "longDescription": "Google DevFest 송도 2024에 참석하여 최신 개발 기술과 트렌드를 학습하고 개발자 커뮤니티와 네트워킹했습니다.",
+      "date": "2024.04 - 2024.06",
+      "location": "성일정보고등학교",
+      "description": "Python 기초 문법 및 프로그래밍 스터디 운영",
+      "longDescription": "프로그래밍 입문자를 위한 Python 기초 스터디를 기획하고 운영했습니다. 기초 문법부터 간단한 프로젝트까지 체계적인 커리큘럼을 구성했습니다.",
       "highlights": [
-        "최신 기술 세션 참여",
-        "Google 기술 업데이트",
-        "개발자 네트워킹",
-        "커뮤니티 활동"
+        "Python 기초 문법 교육",
+        "실습 중심 커리큘럼",
+        "프로그래밍 입문자 대상",
+        "프로젝트 기반 학습"
       ],
-      "link": "https://devfest.withgoogle.com",
-      "image": "/images/activities/devfest-songdo.jpg"
+      "image": "/images/activities/python-basic.jpg"
     },
     {
-      "id": "21",
-      "title": "디지털새싹 AI 메이커톤 어벤저스상(최우수상)",
-      "organization": "디지털새싹",
-      "type": "award",
-      "year": 2024,
-      "featured": true,
-      "date": "2024.12.21 - 2024.12.22",
-      "location": "서울",
-      "description": "SignGPT OpenVINO 모델 개선으로 최우수상 수상",
-      "longDescription": "디지털새싹 인공지능 메이커톤에서 SignGPT 프로젝트의 OpenVINO 모델 최적화를 통해 어벤저스상(최우수상)을 수상했습니다. 모델 경량화와 추론 속도 개선에 집중했습니다.",
-      "highlights": [
-        "어벤저스상(최우수상) 수상",
-        "OpenVINO 모델 최적화",
-        "SignGPT 성능 개선",
-        "48시간 해커톤 참가"
-      ],
-      "image": "/images/activities/digital-sesak.jpg"
-    },
-    {
-      "id": "22",
-      "title": "제8회 슈퍼컴퓨팅 청소년캠프",
-      "organization": "KISTI",
-      "type": "academy",
+      "id": "17",
+      "title": "Python?! 그거 어디에 쓰는데 스터디",
+      "organization": "Sung-il Software Study",
+      "type": "community",
       "year": 2024,
       "featured": false,
-      "date": "2024.07.29 - 2024.08.02",
-      "location": "대전",
-      "description": "슈퍼컴퓨팅 기초 및 응용 학습 캠프",
-      "longDescription": "제8회 슈퍼컴퓨팅 청소년캠프에 참가하여 고성능 컴퓨팅(HPC)의 기초와 실제 슈퍼컴퓨터 활용 방법을 학습했습니다.",
+      "date": "2024.04 - 2024.06",
+      "location": "성일정보고등학교",
+      "description": "Python 실무 활용 사례 스터디 운영",
+      "longDescription": "Python의 다양한 실무 활용 사례를 다루는 스터디를 운영했습니다. 데이터 분석, 자동화, 웹 개발 등 실제 활용 분야를 탐구했습니다.",
       "highlights": [
-        "슈퍼컴퓨팅 기초 이론",
-        "HPC 실습 교육",
-        "병렬 프로그래밍 학습",
-        "실제 슈퍼컴퓨터 체험"
+        "Python 활용 분야 탐구",
+        "데이터 분석 실습",
+        "자동화 스크립트 작성",
+        "실무 프로젝트 체험"
       ],
-      "image": "/images/activities/supercomputing-camp.jpg"
+      "image": "/images/activities/python-usage.jpg"
     },
     {
-      "id": "23",
+      "id": "18",
       "title": "AWSome Day",
       "organization": "Amazon Web Services",
       "type": "conference",
@@ -442,45 +345,103 @@
       "image": "/images/activities/awsome-day.jpg"
     },
     {
-      "id": "24",
-      "title": "Sideimpact 우수 프로젝트 선정",
-      "organization": "Sideimpact",
-      "type": "award",
-      "year": 2025,
-      "featured": true,
-      "date": "2025.12",
-      "location": "온라인",
-      "description": "사이드 프로젝트 우수 프로젝트 선정",
-      "longDescription": "Sideimpact 플랫폼에서 진행한 사이드 프로젝트가 우수 프로젝트로 선정되었습니다. 창의적인 아이디어와 기술적 완성도를 인정받았습니다.",
+      "id": "19",
+      "title": "제8회 슈퍼컴퓨팅 청소년캠프",
+      "organization": "KISTI",
+      "type": "academy",
+      "year": 2024,
+      "featured": false,
+      "date": "2024.07.29 - 2024.08.02",
+      "location": "대전",
+      "description": "슈퍼컴퓨팅 기초 및 응용 학습 캠프",
+      "longDescription": "제8회 슈퍼컴퓨팅 청소년캠프에 참가하여 고성능 컴퓨팅(HPC)의 기초와 실제 슈퍼컴퓨터 활용 방법을 학습했습니다.",
       "highlights": [
-        "우수 프로젝트 선정",
-        "창의적 아이디어 인정",
-        "기술적 완성도 평가",
-        "커뮤니티 피드백 반영"
+        "슈퍼컴퓨팅 기초 이론",
+        "HPC 실습 교육",
+        "병렬 프로그래밍 학습",
+        "실제 슈퍼컴퓨터 체험"
       ],
-      "image": "/images/activities/sideimpact.jpg"
+      "image": "/images/activities/supercomputing-camp.png"
+    },
+    {
+      "id": "20",
+      "title": "AI Youth Challenge 교육부 장관상(대상)",
+      "organization": "AI Youth Challenge",
+      "type": "award",
+      "year": 2024,
+      "featured": true,
+      "date": "2024.08.27",
+      "location": "서울",
+      "description": "SignGPT 프로젝트로 교육부 장관상 대상 수상",
+      "longDescription": "AI Youth Challenge에서 SignGPT 프로젝트로 교육부 장관상(대상)을 수상했습니다. 수어 인식 AI를 활용한 소통 도구를 개발하여 사회적 가치를 인정받았습니다.",
+      "highlights": [
+        "교육부 장관상 대상 수상",
+        "SignGPT 프로젝트 개발",
+        "수어 인식 AI 구현",
+        "사회적 가치 창출"
+      ],
+      "image": "/images/activities/ai-youth-challenge.png"
+    },
+    {
+      "id": "21",
+      "title": "Next.js 반응형 웹 만들기 스터디",
+      "organization": "Sung-il Software Study",
+      "type": "community",
+      "year": 2024,
+      "featured": false,
+      "date": "2024.09 - 2024.11",
+      "location": "성일정보고등학교",
+      "description": "Next.js를 활용한 반응형 웹 개발 스터디 운영",
+      "longDescription": "Next.js 프레임워크를 활용한 반응형 웹 개발 스터디를 운영했습니다. React 기초부터 Next.js 심화까지 웹 개발 전반을 다루었습니다.",
+      "highlights": [
+        "React/Next.js 기초 교육",
+        "반응형 웹 디자인 실습",
+        "실제 웹사이트 개발",
+        "배포 및 운영 학습"
+      ],
+      "image": "/images/activities/nextjs-study.jpg"
+    },
+    {
+      "id": "22",
+      "title": "내 삶의 LEG가 되어줄 RAG 구축하기",
+      "organization": "Sung-il Software Study",
+      "type": "community",
+      "year": 2024,
+      "featured": true,
+      "date": "2024.09 - 2024.11",
+      "location": "성일정보고등학교",
+      "description": "RAG 시스템 구축 실습 스터디 운영",
+      "longDescription": "LLM과 RAG(Retrieval-Augmented Generation) 기술을 활용한 개인화된 AI 시스템 구축 스터디를 운영했습니다. 실제 서비스 수준의 RAG 파이프라인 구축을 목표로 했습니다.",
+      "highlights": [
+        "RAG 아키텍처 이해",
+        "벡터 DB 활용",
+        "LangChain 실습",
+        "개인화 AI 시스템 구축"
+      ],
+      "image": "/images/activities/rag-study.jpg"
+    },
+
+    {
+      "id": "24",
+      "title": "디지털새싹 AI 메이커톤 어벤저스상(최우수상)",
+      "organization": "디지털새싹",
+      "type": "award",
+      "year": 2024,
+      "featured": true,
+      "date": "2024.12.21 - 2024.12.22",
+      "location": "서울",
+      "description": "SignGPT OpenVINO 모델 개선으로 최우수상 수상",
+      "longDescription": "디지털새싹 인공지능 메이커톤에서 SignGPT 프로젝트의 OpenVINO 모델 최적화를 통해 어벤저스상(최우수상)을 수상했습니다. 모델 경량화와 추론 속도 개선에 집중했습니다.",
+      "highlights": [
+        "어벤저스상(최우수상) 수상",
+        "OpenVINO 모델 최적화",
+        "SignGPT 성능 개선",
+        "48시간 해커톤 참가"
+      ],
+      "image": "/images/activities/digital-sesak.jpeg"
     },
     {
       "id": "25",
-      "title": "가천대학교 헬스케어 데이터 분석",
-      "organization": "가천대학교",
-      "type": "academy",
-      "year": 2025,
-      "featured": true,
-      "date": "2025.08.04 - 2025.08.08",
-      "location": "가천대학교",
-      "description": "헬스케어 분야 데이터 분석 교육 프로그램",
-      "longDescription": "가천대학교에서 진행하는 헬스케어 데이터 분석 프로그램에 참여하여 의료 데이터 분석 기법과 헬스케어 AI 활용 방법을 학습했습니다.",
-      "highlights": [
-        "헬스케어 데이터 분석",
-        "의료 AI 활용 학습",
-        "데이터 전처리 실습",
-        "분석 프로젝트 수행"
-      ],
-      "image": "/images/activities/gachon-healthcare.jpg"
-    },
-    {
-      "id": "26",
       "title": "제40회 국제의료기기병원설비전시회",
       "organization": "가천대학교",
       "type": "conference",
@@ -496,7 +457,26 @@
         "산업 네트워킹",
         "전시 부스 견학"
       ],
-      "image": "/images/activities/kimes-2025.jpg"
+      "image": "/images/activities/kimes-2025.jpeg"
+    },
+    {
+      "id": "26",
+      "title": "가천대학교 헬스케어 데이터 분석",
+      "organization": "가천대학교",
+      "type": "academy",
+      "year": 2025,
+      "featured": true,
+      "date": "2025.08.04 - 2025.08.08",
+      "location": "가천대학교",
+      "description": "헬스케어 분야 데이터 분석 교육 프로그램",
+      "longDescription": "가천대학교에서 진행하는 헬스케어 데이터 분석 프로그램에 참여하여 의료 데이터 분석 기법과 헬스케어 AI 활용 방법을 학습했습니다.",
+      "highlights": [
+        "헬스케어 데이터 분석",
+        "의료 AI 활용 학습",
+        "데이터 전처리 실습",
+        "분석 프로젝트 수행"
+      ],
+      "image": "/images/activities/gachon-healthcare.png"
     },
     {
       "id": "27",
@@ -515,10 +495,48 @@
         "네트워킹 기회",
         "미래 트렌드 학습"
       ],
-      "image": "/images/activities/khf-2025.jpg"
+      "image": "/images/activities/khf-2025.jpeg"
     },
     {
       "id": "28",
+      "title": "가천대학교 코코네스쿨 창업경진대회 장려상",
+      "organization": "가천대학교 코코네스쿨",
+      "type": "award",
+      "year": 2025,
+      "featured": true,
+      "date": "2025.11.27",
+      "location": "가천대학교",
+      "description": "창업경진대회 장려상 수상",
+      "longDescription": "가천대학교 코코네스쿨에서 주최한 창업경진대회에 참가하여 장려상을 수상했습니다. 혁신적인 비즈니스 아이디어와 실현 가능성을 인정받았습니다.",
+      "highlights": [
+        "창업경진대회 장려상 수상",
+        "비즈니스 모델 발표",
+        "창업 아이디어 구체화",
+        "멘토링 피드백 반영"
+      ],
+      "image": "/images/activities/coconeschool.jpeg"
+    },
+    {
+      "id": "29",
+      "title": "Sideimpact 우수 프로젝트 선정",
+      "organization": "Sideimpact",
+      "type": "award",
+      "year": 2025,
+      "featured": true,
+      "date": "2025.12",
+      "location": "온라인",
+      "description": "사이드 프로젝트 우수 프로젝트 선정",
+      "longDescription": "Sideimpact 플랫폼에서 진행한 사이드 프로젝트가 우수 프로젝트로 선정되었습니다. 창의적인 아이디어와 기술적 완성도를 인정받았습니다.",
+      "highlights": [
+        "우수 프로젝트 선정",
+        "창의적 아이디어 인정",
+        "기술적 완성도 평가",
+        "커뮤니티 피드백 반영"
+      ],
+      "image": "/images/activities/sideimpact.jpg"
+    },
+    {
+      "id": "30",
       "title": "바이오헬스 산업 직무설명회",
       "organization": "경기도 대학혁신플랫폼",
       "type": "conference",
@@ -535,25 +553,6 @@
         "취업 정보 획득"
       ],
       "image": "/images/activities/biohealth-jobfair.jpg"
-    },
-    {
-      "id": "29",
-      "title": "가천대학교 코코네스쿨 창업경진대회 장려상",
-      "organization": "가천대학교 코코네스쿨",
-      "type": "award",
-      "year": 2025,
-      "featured": true,
-      "date": "2025.11.27",
-      "location": "가천대학교",
-      "description": "창업경진대회 장려상 수상",
-      "longDescription": "가천대학교 코코네스쿨에서 주최한 창업경진대회에 참가하여 장려상을 수상했습니다. 혁신적인 비즈니스 아이디어와 실현 가능성을 인정받았습니다.",
-      "highlights": [
-        "창업경진대회 장려상 수상",
-        "비즈니스 모델 발표",
-        "창업 아이디어 구체화",
-        "멘토링 피드백 반영"
-      ],
-      "image": "/images/activities/coconeschool.jpg"
     }
   ],
   "tabs": [

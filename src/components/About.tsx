@@ -32,9 +32,9 @@ const highlights = [
 ];
 
 const stats = [
-  { value: "5+", label: "Years" },
-  { value: "50+", label: "Projects" },
-  { value: "30+", label: "Clients" },
+  { value: "2016", label: "Study Since" },
+  { value: "5+", label: "Awards" },
+  { value: "30+", label: "Activities" },
   { value: "∞", label: "Coffee" },
 ];
 
@@ -67,12 +67,17 @@ export default function About() {
 
             <div className="space-y-4 text-[var(--text-muted)] leading-relaxed">
               <p>
-                안녕하세요! 저는 5년 이상의 경력을 가진 풀스택 개발자입니다.
-                사용자 경험을 최우선으로 생각하며, 기술적 도전을 즐깁니다.
+                안녕하세요. 저는 AI·백엔드 중심 개발자로, 사람들의 문제를
+                해결하고 삶의 질을 개선하는 제품을 만드는 데 관심이 많습니다.
+                실시간 처리와 성능 최적화, 모델 서빙/데이터 파이프라인 구축
+                경험을 바탕으로 신뢰할 수 있는 서비스를 설계·구현하는 것을
+                강점으로 삼고 있습니다.
               </p>
               <p>
-                스타트업부터 대기업까지 다양한 규모의 프로젝트를 경험했으며,
-                특히 React와 Node.js 생태계에 깊은 전문성을 보유하고 있습니다.
+                프로젝트를 진행 할 때는 기능을 그냥 붙이기보다, 사용자에게
+                진짜로 어떤 도움이 되는지부터 먼저 생각합니다. 빠르게 만들어
+                보고, 데이터와 피드백으로 검증하면서 계속 다듬는 방식으로 성장해
+                왔습니다.
               </p>
             </div>
 
