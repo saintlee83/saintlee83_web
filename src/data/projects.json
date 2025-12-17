@@ -30,7 +30,7 @@
         "FastAPI 기반 실시간 양방향 대화 인터페이스 구축",
         "교육부 장관상 수상 - 기술적 완성도와 사회적 가치 인정"
       ],
-      "image": "/images/projects/signgpt.jpg"
+      "image": "/images/projects/signgpt1.jpg"
     },
     {
       "id": "2",
@@ -63,7 +63,7 @@
         "MVVM 아키텍처로 UI/로직 분리, 파라미터 변경 즉시 반영되는 인터랙티브 UI",
         "Windows/macOS/Linux 크로스플랫폼 지원"
       ],
-      "image": "/images/projects/fft.png"
+      "image": "/images/projects/fft1.png"
     },
     {
       "id": "4",
