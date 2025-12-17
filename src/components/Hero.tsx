@@ -9,10 +9,14 @@ import { ArrowDown, Github, Linkedin, Mail, Twitter, User } from "lucide-react";
 const PROFILE_IMAGE = "/images/profile.jpg";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@saintlee.dev", label: "Email" },
+  { icon: Github, href: "https://github.com/saintlee83", label: "GitHub" },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/jeseok-lee-12042026a/",
+    label: "LinkedIn",
+  },
+  // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Mail, href: "mailto:heisasaint83@gmail.com", label: "Email" },
 ];
 
 export default function Hero() {
