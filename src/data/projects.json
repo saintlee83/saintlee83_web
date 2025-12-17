@@ -20,7 +20,7 @@
       "demo": "https://www.signgpt.org/",
       "featured": true,
       "color": "#10b981",
-      "duration": "6개월",
+      "duration": "1년 6개월",
       "team": "3명",
       "role": "AI Developer",
       "highlights": [
@@ -114,8 +114,8 @@
       "demo": "https://www.youtube.com/watch?v=t268hgDSMkE",
       "featured": true,
       "color": "#f43f5e",
-      "duration": "3개월",
-      "team": "2명",
+      "duration": "1개월",
+      "team": "5명",
       "role": "Frontend & Agent Pipeline Developer",
       "highlights": [
         "LangGraph 기반 상태머신(Socratic→Options→Critic→HITL→Plan) 설계 및 구현",
@@ -127,6 +127,6 @@
         "2025 가천대학교 코코네스쿨 창업경진대회 장려상 수상"
       ],
       "image": "/images/projects/raidesk.png"
-    }
+    } 
   ]
 }
